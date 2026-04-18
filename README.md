@@ -1,3 +1,58 @@
-# SoftGrowTech_Smart_Buzzer_Alert_System
-A Smart Proximity Alert System built with Arduino Uno and HC-SR04 Ultrasonic Sensor to detect objects and trigger a buzzer alarm
-Smart Proximity Alert System (Task 1)This project was developed as part of the SoftGrow Tech IoT Internship. The system uses an ultrasonic sensor to monitor the distance of objects in real-time and triggers a buzzer alarm when an object comes within a predefined range.🚀 Project OverviewThe goal of this task is to demonstrate hardware-software integration using an Arduino Uno. This system can be used as a basic security alarm or a proximity sensor for obstacle avoidance.🛠️ Components UsedMicrocontroller: Arduino UnoSensor: HC-SR04 Ultrasonic SensorOutput: Piezo BuzzerOther: Breadboard and Jumper Wires🔌 Circuit ConnectionsComponentArduino PinUltrasonic VCC5VUltrasonic GNDGNDUltrasonic TrigPin 9Ultrasonic EchoPin 10Buzzer (+)Pin 8Buzzer (-)GND📝 How it WorksThe Ultrasonic Sensor sends out high-frequency sound waves via the Trig pin.If an object is in front, the waves bounce back and are received by the Echo pin.The Arduino calculates the distance based on the time taken for the pulse to return.If the distance is less than 30cm, the Arduino sends a signal to the Buzzer to produce an alert sound.💻 Installation & UsageClone this repository or download the .ino file.Open the file in the Arduino IDE.Connect your Arduino Uno to your PC.Select the correct Board (Uno) and Port from the Tools menu.Click Upload.Open the Serial Monitor (9600 baud) to see live distance readings.👨‍💻 Internship CreditOrganization: SoftGrow TechTask: Task 2 (Smart Systems/IoT)Student: Hafiza Yumna Mushtaq
+🚀 Smart Buzzer Alert System
+
+This project is a smart proximity alert system built using Arduino Uno and an HC-SR04 ultrasonic sensor. It detects nearby objects and activates a buzzer when the object comes within a defined distance.
+
+🚀 Project Overview
+
+This system was developed during the SoftGrow Tech IoT Internship. The main goal is to demonstrate how hardware and software work together using Arduino.
+
+The system can be used in:
+
+* Basic security alarm systems
+* Obstacle detection systems
+* Parking assistance
+
+🛠️ Components Used
+
+* Arduino Uno
+* HC-SR04 Ultrasonic Sensor
+* Piezo Buzzer
+* Breadboard
+* Jumper Wires
+
+
+🔌 Circuit Connections
+
+* Ultrasonic Sensor VCC → 5V
+* Ultrasonic Sensor GND → GND
+* Trig Pin → Pin 9
+* Echo Pin → Pin 10
+* Buzzer (+) → Pin 8
+* Buzzer (−) → GND
+
+📝 How it Works
+
+The system works in the following steps:
+
+* The ultrasonic sensor sends sound waves through the Trig pin
+* The waves reflect back when they hit an object
+* The Echo pin receives the reflected signal
+* Arduino calculates the distance based on time
+* If the distance is less than 30 cm, the buzzer turns ON
+
+💻Installation and Usage
+
+To run this project:
+
+1 Download or clone the repository
+2 Open the file in Arduino IDE
+3 Connect Arduino Uno to your computer
+4 Select the correct board and port
+5 Upload the code
+6 Open Serial Monitor (9600 baud) to view readings
+
+👨‍💻Internship Credit
+
+* Organization: SoftGrow Tech
+* Task: Smart Systems/IoT
+* Student: Hafiza Yumna Mushtaq
